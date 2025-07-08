@@ -9,8 +9,8 @@ print(Dataf)
 
 #inicializar la app
 app = dash.Dash(__name__)
-#definir el servidor en render 
 server = app.server
+app.title = 'Estadistica notas'
 #crear el layout
 app.layout = html.Div([
     #crear el titulo del tablero
@@ -79,4 +79,3 @@ def actualizar(filtro_materia):
 #Ejecutar la aplicacion
 if __name__ == '__main__':
     app.run(debug=True)
-    
